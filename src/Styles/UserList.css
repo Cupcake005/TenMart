@@ -1,0 +1,62 @@
+.container {
+    padding: 16px;
+}
+
+.tb-usr {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th-usr, .td-usr {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.th-usr {
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    .tb-usr {
+        display: block;
+        overflow-x: auto; /* Tambahkan scroll horizontal */
+        white-space: nowrap;
+    }
+    
+    .th-usr, .td-usr {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .img-profile {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-usr {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tb-usr {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .th-usr, .td-usr {
+        font-size: 12px;
+    }
+
+    .img-profile {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btn-usr {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+}

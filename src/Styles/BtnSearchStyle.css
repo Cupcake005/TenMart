@@ -1,0 +1,42 @@
+
+
+.search-bar {
+    background-color: white;
+    padding: 1px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Membuat search bar mengambil sisa ruang */
+    margin-left: 20px; /* Memberikan jarak dari elemen sebelumnya */
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Mengisi lebar penuh elemen flex */
+    margin-right: 10px;
+    outline: none; /* Mematikan outline saat input diisi */
+    border: none;
+}
+
+
+.search-button {
+    width: 70px;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: red; /* Warna tombol */
+    border: none;
+    border-radius: 2px;
+    margin: 0px 5px;
+
+    cursor: pointer;
+    white-space: nowrap; /* Mencegah teks di dalam tombol melompat baris */
+}
+
+
+

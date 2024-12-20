@@ -1,0 +1,73 @@
+.header-adm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: red;
+    position: sticky;
+    color: white;
+    height: 50px;
+    z-index: 1000;
+    top: 0;
+}
+
+.ad-font {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.fas.fa-user-circle {
+    font-size: 24px;
+    cursor: pointer;
+}
+.back-button{
+   width: 50px;
+   color: white;
+   border: none;
+   background-color: transparent;
+
+}
+
+.back-button:hover{
+    background-color: blue;
+}
+
+/* Menu burger tersembunyi secara default */
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Menampilkan menu di bawah ikon */
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* Tampilkan menu burger saat ikon di-hover */
+.icon-wrapper:hover .burger-menu {
+    display: block;
+}
+
+.burger-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.burger-menu li:hover {
+    background-color: #f0f0f0;
+}
+

@@ -1,0 +1,239 @@
+/* src/Styles/ProductList.css */
+
+.product-list {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-container {
+    
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolom pada layar besar */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Mengisi lebar kolom grid */
+    max-width: 150px; /* Lebar card agar muat dalam 5 kolom */
+    height: auto;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.namaBarang {
+    font-size: 0.9rem; 
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.hargaBarang {
+    font-size: 1rem; /* Ukuran font sedikit lebih kecil */
+    font-weight: 700;
+    color: red;
+    margin: 5px 0;
+}
+
+.stok {
+    font-size: larger;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+
+.gambarProduct {
+    max-height: 150px;
+    width: 100%;
+    object-fit: cover; /* Mengatur gambar agar tetap proporsional */
+    border-bottom: 1px solid #ddd;
+}
+.gambarProductEdit{
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain; /* Mengatur gambar agar tetap proporsional */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Ukuran font sedikit lebih kecil */
+    color: #333;
+}
+.gambarProduct-add{
+    height: 100px;
+}
+
+.lbl-jumlah{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar mobile */
+       
+    }
+    .card {
+        max-width: 100px; /* Lebar card lebih kecil di tampilan mobile */
+        padding: 8px; 
+
+    
+    }
+    .gambarProduct {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .namaBarang {
+        font-size: 0.5rem; /* Ukuran font lebih kecil di layar lebih kecil */
+    }
+
+    .hargaBarang {
+        font-size: 0.5rem; /* Ukuran font lebih kecil di layar lebih kecil */
+    }
+
+    h1 {
+        font-size: 1.4rem; /* Ukuran font lebih kecil di layar lebih kecil */
+    }
+}
+
+/* Styling for the Popup container */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999;
+}
+
+/* Styling for the Popup content */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image inside the popup */
+.popup-content img.gambarProduct-add {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Product name and price */
+.popup-content .namaBarang {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.popup-content .hargaBarang {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Quantity input field */
+.popup-content label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.popup-content input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 2px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Buttons */
+.popup-content button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+/* Blue button (Add to Cart) */
+.popup-content button:nth-child(1) {
+    background-color: #007bff;
+    color: white;
+}
+
+.popup-content button:nth-child(1):hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Red button (Cancel) */
+.popup-content button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.popup-content button:nth-child(2):hover {
+    background-color: #c82333;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* For small screens (responsive design) */
+
+
+
+
+
+/* hkjdb */
+

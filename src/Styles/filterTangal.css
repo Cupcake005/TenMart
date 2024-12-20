@@ -1,0 +1,28 @@
+.tanggal-filter {
+    margin-bottom: 20px;
+}
+
+.tanggal-filter {
+    margin: 10px 0;
+}
+
+.tanggal-filter {
+    margin-right: 10px;
+}
+
+.tanggal-filter input {
+    padding: 5px;
+}
+
+.tanggal-filter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tanggal-filter button:hover {
+    background-color: #0056b3;
+}

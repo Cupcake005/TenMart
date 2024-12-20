@@ -1,0 +1,41 @@
+/* src/Styles/slider.css */
+
+/* Menghapus latar belakang tombol navigasi */
+.imgSlider .slick-prev,
+.imgSlider .slick-next {
+  background: none !important; /* Menghapus latar belakang tombol */
+  border: none !important; /* Menghapus border jika ada */
+  outline: none; /* Menghapus outline tombol */
+}
+
+/* Tombol navigasi panah sebelumnya */
+.imgSlider .slick-prev {
+    left: 10px; /* Posisi dari sisi kiri */
+    z-index: 1; /* Pastikan tombol berada di atas elemen lain */
+  }
+  
+  .imgSlider .slick-prev:before {
+    color: white; /* Warna panah */
+    font-size: 24px; /* Ukuran font panah */
+    content: '<'; /* Karakter panah sebelumnya, bisa diganti */
+  }
+  
+  /* Tombol navigasi panah berikutnya */
+  .imgSlider .slick-next {
+    right: 10px; /* Posisi dari sisi kanan */
+    z-index: 1; /* Pastikan tombol berada di atas elemen lain */
+  }
+  
+  .imgSlider .slick-next:before {
+    color: white; /* Warna panah */
+    font-size: 24px; /* Ukuran font panah */
+    content: '>'; /* Karakter panah berikutnya, bisa diganti */
+  }
+  
+  /* Menyembunyikan tombol navigasi pada layar kecil jika diinginkan */
+  @media (max-width: 600px) {
+    .imgSlider .slick-prev, .imgSlider .slick-next {
+      display: none; /* Menyembunyikan tombol pada layar kecil */
+    }
+  }
+  

@@ -1,0 +1,31 @@
+.containerRegisLogin{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    position: fixed;
+}
+
+.txtInput{
+    margin: 20px;
+    height: 30px;
+    width: 100%;
+    list-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: red 2px solid;
+    font-size: medium;
+
+}
+
+.title-form{
+    width:'100%'; 
+    height: 30px;
+    display:'flex'; 
+    justify-content: center;
+    font-size: larger;
+}

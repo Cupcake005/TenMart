@@ -1,0 +1,28 @@
+.headerCart {
+    display: flex; 
+    align-items: center;
+    padding: 10px; 
+    background-color: red; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color : white;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px;
+    height: 50px;
+
+}
+.HCtitle{
+    color:white;
+}
+
+.headerCart h1 {
+    margin: 0;
+    font-size: 24px; 
+}
+i{
+    width: 30px;
+}
+
+

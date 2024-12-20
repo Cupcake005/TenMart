@@ -1,0 +1,80 @@
+.add-product-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-product-form input:focus,
+.add-product-form select:focus,
+.add-product-form button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.add-product-form input[type="file"] {
+    padding: 10px 0;
+}
+
+.add-product-form select {
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.add-product-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-product-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.add-product-form p {
+    font-size: 14px;
+    color: #555;
+}
+
+.add-product-form input,
+.add-product-form select,
+.add-product-form button,
+.add-product-form p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .add-product-form {
+        padding: 15px;
+    }
+
+    .add-product-form button {
+        font-size: 16px;
+    }
+
+    .add-product-form input,
+    .add-product-form select {
+        font-size: 14px;
+    }
+}
